@@ -55,12 +55,12 @@ jobs:
             tags.push(m[1])
           }
           return tags.join(",")
-        result_encoding: string
+        result-encoding: string
 
     - name: Publish Docker image
       uses: elgohr/Publish-Docker-Github-Action@2.16
       with:
-        name: digineode/sisimai-web
+        name:     digineode/sisimai-web
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
-        tags: ${{ steps.set-result.outputs.result }}
+        tags:     ${{ steps.set-tags.outputs.result }}
