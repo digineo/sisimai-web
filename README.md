@@ -2,7 +2,10 @@
 
 Simple [Sinatra][] web application to inspect bounce emails using [Sisimai][].
 
-## Installation
+We try to follow the [Sisimai releases][sisimai-releases]. Feel free to
+[open an issue][issues] or create a pull request, should we fall behind.
+
+## Installation from source
 
 Download the code, install the dependencies and start the server.
 
@@ -13,9 +16,26 @@ $ bundle install
 $ bundle exec ruby app.rb
 ```
 
-The endpoint becomes available at http://localhost:3000/ (API-only)
+## Installation with Docker
+
+We automatically build and push Docker images to [digineode/sisimai-web][hub].
+
+```console
+$ docker pull digineode/sisimai-web
+$ docker run -d -p 3000:3000 digineode/sisimai-web
+```
+
+| Image tag | corresponds to |
+|:----------|:---------------|
+| `digineode/sisimai-web:master` | latest Git master branch |
+| `digineode/sisimai-web:4`      | latest Release in the 4.x series |
+| `digineode/sisimai-web:4.25.7` | a specific release |
+| `digineode/sisimai-web:latest` | the latest build from the above |
 
 ## Usage
+
+After starting the application, the (API only) endpoint becomes available
+at http://localhost:3000/.
 
 Have a bounce mail:
 
@@ -55,5 +75,8 @@ MIT, see [LICENSE](./LICENSE) for details.
 
 [Sinatra]: http://sinatrarb.com
 [Sisimai]: https://libsisimai.org
+[sisimai-releases]: https://rubygems.org/gems/sisimai/versions
+[issues]: https://github.com/digineo/sisimai-web/issues
+[hub]: https://hub.docker.com/r/digineode/sisimai-web
 [azumakuniyuki]: https://github.com/azumakuniyuki
 [emiles-go-bounce-parser]: https://github.com/e-miles/emiles-go-bounce-parser/
