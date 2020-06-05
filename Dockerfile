@@ -3,9 +3,13 @@ FROM ruby:2.7-alpine
 WORKDIR /app
 COPY Gemfile Gemfile.lock /app/
 RUN set -ex \
- && apk add --no-cache make gcc libc-dev \
+ && apk add --no-cache --virtual build-dependencies \
+      make \
+      gcc \
+      libc-dev \
  && bundle config set deployment "true" \
- && bundle install --without="development,test"
+ && bundle install --without="development,test" \
+ && apk del build-dependencies
 
 COPY . .
 
