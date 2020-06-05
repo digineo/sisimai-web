@@ -53,6 +53,7 @@ Copyright (c) 2020, Dominik Menke, Digineo GmbH
 
 MIT, see [LICENSE](./LICENSE) for details.
 
+[Sinatra]: http://sinatrarb.com
 [Sisimai]: https://libsisimai.org
 [azumakuniyuki]: https://github.com/azumakuniyuki
 [emiles-go-bounce-parser]: https://github.com/e-miles/emiles-go-bounce-parser/
