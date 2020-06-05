@@ -41,6 +41,8 @@ jobs:
     needs:   rspec
 
     steps:
+    - uses: actions/checkout@v2
+
     - name: Set image tag (for branches)
       if: startsWith(github.ref, 'refs/heads/')
       run: echo ::set-env name=IMAGE_TAG::$(echo ${GITHUB_REF:11})
