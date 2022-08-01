@@ -1,6 +1,15 @@
 version: 2
 updates:
-- package-ecosystem: "bundler"
-  directory: "/"
-  schedule:
-    interval: "daily"
+  - package-ecosystem: "bundler"
+    directory: "/"
+    schedule:
+      interval: "daily"
+      time: "08:30"
+      timezone: "Europe/Berlin"
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily"
+      time: "08:30"
+      timezone: "Europe/Berlin"
