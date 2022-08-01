@@ -7,8 +7,9 @@ RUN set -ex \
       make \
       gcc \
       libc-dev \
- && bundle config set deployment "true" \
- && bundle install --without="development,test" \
+ && bundle config set --local deployment "true" \
+ && bundle config set --local without "development test" \
+ && bundle install \
  && apk del build-dependencies
 
 COPY . .
