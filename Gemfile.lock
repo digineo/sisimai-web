@@ -41,6 +41,7 @@ GEM
     sisimai (4.25.14)
       oj (>= 3.0.0)
     tilt (2.0.11)
+    webrick (1.7.0)
 
 PLATFORMS
   ruby
@@ -51,6 +52,7 @@ DEPENDENCIES
   rspec
   sinatra
   sisimai
+  webrick
 
 BUNDLED WITH
    2.3.19
