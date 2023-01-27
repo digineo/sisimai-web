@@ -41,7 +41,7 @@ GEM
     sisimai (4.25.15)
       oj (>= 3.0.0)
     tilt (2.0.11)
-    webrick (1.7.0)
+    webrick (1.8.0)
 
 PLATFORMS
   ruby
