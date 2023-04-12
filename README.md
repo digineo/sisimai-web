@@ -27,10 +27,14 @@ $ docker run -d -p 3000:3000 ghcr.io/digineo/sisimai-web
 
 | Image tag | corresponds to |
 |:----------|:---------------|
-| `ghcr.io/digineo/sisimai-web:master` | latest Git master branch |
-| `ghcr.io/digineo/sisimai-web:4`      | latest Release in the 4.x series |
-| `ghcr.io/digineo/sisimai-web:4.25.7` | a specific release |
-| `ghcr.io/digineo/sisimai-web:latest` | the latest build from the above |
+| `ghcr.io/digineo/sisimai-web:master`  | latest Git master branch |
+| `ghcr.io/digineo/sisimai-web:4`       | latest Release in the 4.x series |
+| `ghcr.io/digineo/sisimai-web:4.25.15` | a specific release |
+| `ghcr.io/digineo/sisimai-web:latest`  | the latest build from the above |
+
+Note: You might find earlier versions on the Docker Hub, as `digineode/sisimai-web`;
+these releases are now deprecated and unsupported. Expect the Docker Hub repository
+to vanish in the near future.
 
 ## Usage
 
