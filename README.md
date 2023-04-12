@@ -18,19 +18,19 @@ $ bundle exec ruby app.rb
 
 ## Installation with Docker
 
-We automatically build and push Docker images to [digineode/sisimai-web][hub].
+We automatically build and push Docker images the project's [container registry][ghcr].
 
 ```console
-$ docker pull digineode/sisimai-web
-$ docker run -d -p 3000:3000 digineode/sisimai-web
+$ docker pull ghcr.io/digineo/sisimai-web
+$ docker run -d -p 3000:3000 ghcr.io/digineo/sisimai-web
 ```
 
 | Image tag | corresponds to |
 |:----------|:---------------|
-| `digineode/sisimai-web:master` | latest Git master branch |
-| `digineode/sisimai-web:4`      | latest Release in the 4.x series |
-| `digineode/sisimai-web:4.25.7` | a specific release |
-| `digineode/sisimai-web:latest` | the latest build from the above |
+| `ghcr.io/digineo/sisimai-web:master` | latest Git master branch |
+| `ghcr.io/digineo/sisimai-web:4`      | latest Release in the 4.x series |
+| `ghcr.io/digineo/sisimai-web:4.25.7` | a specific release |
+| `ghcr.io/digineo/sisimai-web:latest` | the latest build from the above |
 
 ## Usage
 
@@ -77,6 +77,6 @@ MIT, see [LICENSE](./LICENSE) for details.
 [Sisimai]: https://libsisimai.org
 [sisimai-releases]: https://rubygems.org/gems/sisimai/versions
 [issues]: https://github.com/digineo/sisimai-web/issues
-[hub]: https://hub.docker.com/r/digineode/sisimai-web
+[ghcr]: https://github.com/digineo/sisimai-web/packages/
 [azumakuniyuki]: https://github.com/azumakuniyuki
 [emiles-go-bounce-parser]: https://github.com/e-miles/emiles-go-bounce-parser/
