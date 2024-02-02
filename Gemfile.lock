@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/sisimai/rb-sisimai.git
-  revision: 7d972e18862ab2c07a181e2839b4e78505d9d2c8
-  ref: v4.25.16p1
+  revision: d9e4002ae5060d46cbf11a25f5cc839a0827cbb6
+  ref: v4.25.16
   specs:
-    sisimai (4.25.16p1)
+    sisimai (4.25.16)
       oj (>= 3.0.0)
 
 GEM
