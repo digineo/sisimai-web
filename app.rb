@@ -1,4 +1,6 @@
 require "sinatra"
+require "sisimai"
+require "sisimai/fact"
 require "oj"
 
 require_relative "lib/classifier"
