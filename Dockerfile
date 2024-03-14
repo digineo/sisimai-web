@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM ruby:3.2-alpine
+FROM ruby:3.3-alpine
 
 WORKDIR /app
 COPY Gemfile Gemfile.lock /app/
@@ -11,8 +11,7 @@ RUN <<BASH
   apk add --no-cache --virtual build-dependencies \
     make \
     gcc \
-    libc-dev \
-    git
+    libc-dev
 
   bundle config set --local deployment "true"
   bundle config set --local without "development test"
