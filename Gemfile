@@ -5,6 +5,7 @@ git_source(:github) { |name| "https://github.com/#{name}.git" }
 gem "sinatra"
 gem "sisimai", "~> 5.0.2"
 gem "webrick"
+gem "rackup"
 
 group :test do
   gem "rspec"
