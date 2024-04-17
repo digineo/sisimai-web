@@ -13,7 +13,7 @@ Download the code, install the dependencies and start the server.
 $ git clone https://github.com/digineo/sisimai-web
 $ cd sisimai-web
 $ bundle install
-$ bundle exec ruby app.rb
+$ bundle exec rackup --host 127.0.0.1 --port 3000
 ```
 
 ## Installation with Docker

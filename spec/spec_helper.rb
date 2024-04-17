@@ -2,13 +2,13 @@ require "rspec"
 require "rack/test"
 
 ENV["RACK_ENV"] = "test"
-require_relative "../app.rb"
+require_relative "../lib/sisimai_web/app.rb"
 
 module TestHelper
   include Rack::Test::Methods
 
   def app
-    Sinatra::Application
+    SisimaiWeb::App
   end
 
   def read_fixture(name)

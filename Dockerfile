@@ -24,4 +24,4 @@ COPY . .
 
 EXPOSE 3000
 
-CMD ["bundle", "exec", "ruby", "/app/app.rb"]
+CMD ["bundle", "exec", "rackup", "--host=0.0.0.0", "--port=3000", "--env=production"]

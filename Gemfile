@@ -4,7 +4,7 @@ git_source(:github) { |name| "https://github.com/#{name}.git" }
 
 gem "sinatra"
 gem "sisimai", "~> 5.0.2"
-gem "webrick"
+gem "puma"
 gem "rackup"
 
 group :test do
