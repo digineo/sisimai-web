@@ -1,26 +1,7 @@
 require "spec_helper"
 
 RSpec.describe "mail classification" do
-  SOFT = 1
-  HARD = 0
-  UNKNOWN = -1
-
-  {
-    "auto_earthlink"   => { bounce: UNKNOWN, reason: "vacation",     replycode: "" },
-    "bounce_aol"       => { bounce: HARD,    reason: "userunknown",  replycode: "550" },
-    "bounce_att"       => { bounce: SOFT,    reason: "spamdetected", replycode: "521" },
-    "bounce_charter"   => { bounce: HARD,    reason: "userunknown",  replycode: "550" },
-    "bounce_cox"       => { bounce: SOFT,    reason: "suspend",      replycode: "550" },
-    "bounce_earthlink" => { bounce: HARD,    reason: "userunknown",  replycode: "550" },
-    "bounce_exchange"  => { bounce: HARD,    reason: "userunknown",  replycode: "550" },
-    "bounce_gmail"     => { bounce: HARD,    reason: "userunknown",  replycode: "550" },
-    "bounce_hotmail"   => { bounce: HARD,    reason: "userunknown",  replycode: "550" },
-    "bounce_me"        => { bounce: HARD,    reason: "userunknown",  replycode: "550" },
-    "bounce_postfix"   => { bounce: HARD,    reason: "userunknown",  replycode: "550" },
-    "bounce_spam"      => { bounce: SOFT,    reason: "spamdetected", replycode: "554" },
-    "bounce_yahoo"     => { bounce: HARD,    reason: "userunknown",  replycode: "554" },
-    "ordinary_gmail"   => { bounce: false },
-  }.each do |fixture, options|
+  each_fixture do |fixture, options|
     it "classifies #{fixture}" do
       message = read_fixture("messages/#{fixture}.txt")
 
