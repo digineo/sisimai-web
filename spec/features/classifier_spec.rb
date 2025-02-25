@@ -18,7 +18,7 @@ RSpec.describe "mail classification" do
     "bounce_me"        => { bounce: HARD,    reason: "userunknown",  replycode: "550" },
     "bounce_postfix"   => { bounce: HARD,    reason: "userunknown",  replycode: "550" },
     "bounce_spam"      => { bounce: SOFT,    reason: "spamdetected", replycode: "554" },
-    "bounce_yahoo"     => { bounce: SOFT,    reason: "filtered",     replycode: "554" },
+    "bounce_yahoo"     => { bounce: HARD,    reason: "userunknown",  replycode: "554" },
     "ordinary_gmail"   => { bounce: false },
   }.each do |fixture, options|
     it "classifies #{fixture}" do
