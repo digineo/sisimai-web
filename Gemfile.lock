@@ -66,7 +66,7 @@ GEM
       rack-protection (= 4.1.1)
       rack-session (>= 2.0.0, < 3)
       tilt (~> 2.0)
-    sisimai (5.2.0)
+    sisimai (5.2.1)
       oj (>= 3.0.0)
     stringio (3.1.5)
     tilt (2.6.0)
@@ -81,7 +81,7 @@ DEPENDENCIES
   rackup
   rspec
   sinatra
-  sisimai (~> 5.2.0)
+  sisimai (~> 5.2.1)
 
 BUNDLED WITH
    2.6.5
