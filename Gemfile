@@ -3,7 +3,7 @@ source "https://rubygems.org"
 git_source(:github) { |name| "https://github.com/#{name}.git" }
 
 gem "sinatra"
-gem "sisimai", "~> 5.2.1"
+gem "sisimai", "~> 5.3.0"
 gem "puma"
 gem "rackup"
 
